@@ -144,10 +144,23 @@ input {
 
 
 #navegacion-categoria {
+   display: flex;
+   justify-content: center;
    background-color: #775f22;
 }
 
+.tab-categoria {
+   margin-top: 1em;
+   margin-bottom: 1em;
+   margin-right: 4em;
+   text-decoration: none;
+   color: black;
+}
+
 #seccion-categoria {
+   display: grid;
+   grid-template-columns: repeat(3, 33.33%);
+   grid-template-rows: repeat(4, 25%);
    min-height: 720px;
    background-color: #f5eedc;
 }
@@ -156,7 +169,13 @@ input {
    border: solid 3px #dda853;
 }
 
+#cuerpo {
+   display: flex;
+   flex-direction: column;
+}
+
 #footer-principal {
+   display: grid;
    background-color: blue;
    color: white;
 }
