@@ -12,15 +12,22 @@
 #seccion-categoria {
    min-height: 720px;
    background-color: orange;
+   display:flex;
+   flex-wrap: wrap;
+   gap: 10px;
+
 }
 
 .articulo-categoria {
    border: solid 3px gray;
+   flex: auto;
 }
 
 #footer-principal {
    background-color: blue;
    color: white;
+    display: flex;
+   justify-content: space-between;
 }
 
 #qr-code {
