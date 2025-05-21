@@ -3,9 +3,44 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title></title>
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <title>Iniciar Sesión</title>
 </head>
 <body>
-   
+   <form>
+      <h1 id="titulo-login">Iniciar Sesión</h1>
+
+      <div class="input-box">
+         <input type="email" name="email" placeholder="Email">
+         <i class='bx  bxs-envelope-alt' ></i> 
+      </div>
+
+      <div class="input-box">
+         <input type="password" name="password" placeholder="Contraseña">
+         <i class='bx  bxs-lock-keyhole'  ></i> 
+      </div>
+
+      <div class="recuerdame-olvide-box">
+         <div class="recuerdame">
+            <input type="checkbox" name="recuerdame" id="recuerdame">
+            <label for="recuerdame">
+               <h5>mantener sesión iniciada</h5>
+            </label>
+            <a class="" href="recuperar-password.html">
+               <h5>Olvidé mi Contraseña</h5>
+            </a>
+         </div>
+      </div>
+
+      <button id="boton-login" type="submit">
+         Login
+      </button>
+
+      <h5 id="no-tengo-una-cuenta">
+         ¿No tienes una cuenta?
+         <a href="registrarse.html">Registrarse</a>
+      </h5>
+
+   </form>
 </body>
 </html>
