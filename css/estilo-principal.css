@@ -190,3 +190,39 @@ input {
    width: 100px;
    height: 100px;
 }
+
+.item-valor-portada {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.formato-texto-cartas{
+   font-weight:bold;
+   text-transform:uppercase;
+}
+
+.item-valor-nombre{
+   display: grid;
+   justify-self: center;
+   font-size: medium;
+}
+
+.detalle-articulo{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+   gap: 1rem; /* opcional: espacio entre columnas */
+   align-items: start; /* o center, según cómo quieras alinear verticalmente */
+   margin-bottom: 2rem;
+}
+
+.detalle-articulo .precio{
+   text-align: center;
+}
+
+.detalle-articulo .stock{
+   text-align: center;
+}
+
+.detalle-articulo .color{
+   text-align: center;
+}
