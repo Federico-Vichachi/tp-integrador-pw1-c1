@@ -1,101 +1,100 @@
 ﻿body {
-    background-color: #f5eedc;
-    font-family: 'Libre Franklin', Arial, sans-serif;
-    margin: 0, auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 50em;
+  background-color: #f5eedc;
+  font-family: "Libre Franklin", Arial, sans-serif;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 form {
-    background-color: #fff;
-    border: 2px solid #dda853;
-    border-radius: 10px;
-    padding: 2em 1.5em;
-    width: 100%;
-    max-width: 350px;
-    box-shadow: 0 2px 8px rgba(119, 95, 34, 0.08);
-    display: flex;
-    flex-direction: column;
-    gap: 1.2em;
+  background-color: #fff;
+  border: 2px solid #dda853;
+  border-radius: 10px;
+  padding: 2em 1.5em;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 2px 8px rgba(119, 95, 34, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
 }
 
 #titulo-login {
-    color: #183b4e;
-    text-align: center;
-    margin-bottom: 0.5em;
-    font-size: 1.7em;
+  color: #183b4e;
+  text-align: center;
+  margin-bottom: 0.5em;
+  font-size: 1.7em;
 }
 
 .input-box {
-    position: relative;
-    margin-bottom: 1em;
+  position: relative;
+  margin-bottom: 1em;
 }
 
 .input-box input {
-    width: 100%;
-    padding: 0.7em 2.2em 0.7em 0.8em;
-    border: 2px solid #dda853;
-    border-radius: 6px;
-    font-size: 1em;
-    background-color: #f5eedc;
-    color: #183b4e;
-    outline: none;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 0.7em 2.2em 0.7em 0.8em;
+  border: 2px solid #dda853;
+  border-radius: 6px;
+  font-size: 1em;
+  background-color: #f5eedc;
+  color: #183b4e;
+  outline: none;
+  box-sizing: border-box;
 }
 
 .input-box input:focus {
-    border-color: #775f22;
-    background-color: #fff;
+  border-color: #775f22;
+  background-color: #fff;
 }
 
 .recuerdame {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.4em;
-    margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4em;
+  margin-bottom: 1em;
 }
 
 .recuerdame input[type="checkbox"] {
-    width: 1em;
-    height: 1em;
+  width: 1em;
+  height: 1em;
 }
 
-
 #boton-login {
-    width: 100%;
-    padding: 0.7em 0;
-    background-color: #775f22;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    font-size: 1.1em;
-    font-weight: 600;
-    cursor: pointer;
+  width: 100%;
+  padding: 0.7em 0;
+  background-color: #775f22;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 #boton-login:hover {
-    background-color: #dda853;
-    color: #183b4e;
+  background-color: #dda853;
+  color: #183b4e;
 }
 
 #olvide {
-    color: #183b4e;
-    text-decoration: none;
-    text-align: center;
+  color: #183b4e;
+  text-decoration: none;
+  text-align: center;
 }
 
 #no-tengo-una-cuenta {
-    text-align: center;
-    font-size: 1em;
-    color: #183b4e;
-    margin-top: 0.5em;
-    font-weight: 400;
+  text-align: center;
+  font-size: 1em;
+  color: #183b4e;
+  margin-top: 0.5em;
+  font-weight: 400;
 }
 
 #no-tengo-una-cuenta a {
-    color: #183b4e;
-    text-decoration: none;
+  color: #183b4e;
+  text-decoration: none;
 }
