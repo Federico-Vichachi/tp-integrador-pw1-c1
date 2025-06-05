@@ -36,7 +36,7 @@
    align-items: center;
    gap: 0.4em;
    font-size: 2em;
-   
+
 }
 
 input {
@@ -44,7 +44,7 @@ input {
    width: 16em;
    border-radius: 4px;
    border: 3px solid #183b4e;
-} 
+}
 
 #encabezado-principal a {
    text-decoration: none;
@@ -120,7 +120,7 @@ input {
       font-size: 0.8em;
    }
 
-   #titulo-logo{
+   #titulo-logo {
       position: relative;
       left: 10px;
    }
@@ -136,7 +136,7 @@ input {
       height: 20px;
    }
 
-   #iconos{
+   #iconos {
       display: flex;
       flex-direction: row;
    }
@@ -191,6 +191,7 @@ input {
    font-family: "Padauk", sans-serif;
    font-size: 15px;
    padding: 5px;
+   height: 200px;
 }
 
 #footer-principal div {
@@ -198,49 +199,122 @@ input {
    padding: 10px;
 }
 
+.titulos-footer {
+   padding-left: 5px;
+   font-weight: bold;
+   text-transform: uppercase;
+   text-decoration: 2px underline;
+   font-size: 16px;
+}
+
 .listas-footer {
-   font-size: 8px;
    margin: 12px 5px 5px 0px;
+   padding-left: 5px;
 }
 
 #footer-principal-izquierda {
-   font-size: 8px;
+   font-size: 15px;
    margin: 12px 5px 5px 0px;
+   width: 300px;
+   height: 150px;
 }
 
 #footer-principal-centro {
-   font-size: 8px;
+   font-size: 15px;
    margin: 12px 5px 5px 0px;
+   width: 300px;
+   height: 150px;
 }
 
-#footer-principal-izquierda ul{
+.input-footer input[type="text"] {
+   padding: 5px;
+   font-size: 15px;
+   border: 1px solid #ccc;
+   border-radius: 6px;
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+   width: 200px;
+   margin: 0;
+   margin-right: -5px;
+}
+
+.boton-suscribete {
+   background-color: #775f22;
+   /* Verde */
+   color: white;
+   padding: 5px 5px;
+   border: none;
+   border-radius: 6px;
+   border-top-left-radius: 0;
+   border-bottom-left-radius: 0;
+   cursor: pointer;
+   font-size: 16px;
+   transition: background-color 0.3s ease;
+}
+
+.boton-suscribete:hover {
+   background-color: #183b4e;
+}
+
+#footer-principal-izquierda ul {
    list-style: none;
 }
 
 .iconos-footer {
    display: flex;
    gap: 5px;
-   padding-left: 0!important;
-   padding-top: 0!important;
+   padding-left: 0 !important;
+   padding-top: 0 !important;
 }
 
 .iconos-footer img {
-   width: 15px;
-   height: 15px;
+   width: 30px;
+   height: 30px;
 }
 
 .signUp {
-   padding-left: 0!important;
-   padding-top: 0!important;
+   padding-left: 0 !important;
+   padding-top: 0 !important;
 }
 
 .input-footer {
    display: flex;
    align-items: center;
-   padding: 0!important;
+   padding: 0 !important;
 }
 
-.input-footer input {
-   width: 50%;
-   font-size: 8px;
+.item-valor-portada {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.formato-texto-cartas{
+   font-weight:bold;
+   text-transform:uppercase;
+}
+
+.item-valor-nombre{
+   display: grid;
+   justify-self: center;
+   font-size: medium;
+}
+
+.detalle-articulo{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+   gap: 1rem; /* opcional: espacio entre columnas */
+   align-items: start; /* o center, según cómo quieras alinear verticalmente */
+   margin-bottom: 2rem;
+}
+
+.detalle-articulo .precio{
+   text-align: center;
+}
+
+.detalle-articulo .stock{
+   text-align: center;
+}
+
+.detalle-articulo .color{
+   text-align: center;
 }
