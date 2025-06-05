@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/estilo-datos-personales.css" />
+    <title>Datos Personales</title>
+  </head>
+  <body>
+    <form action="">
+      <h1 id="titulo">Mi Usuario</h1>
+
+      <div class="input-box">
+        <label class="etiqueta" for="nombre">Email principal</label>
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Ingrese su Email"
+          required
+        />
+
+        <button type="submit" id="boton">Cambiar Email</button>
+      </div>
+      <div class="input-box">
+        <label class="etiqueta" for="contraseña">Contraseña</label>
+
+        <input
+          type="password"
+          name="contraseña-nueva"
+          placeholder="Ingrese La Nueva Contraseña"
+          required
+        />
+        <button type="submit" id="boton">Cambiar Contraseña</button>
+      </div>
+    </form>
+    <form action="">
+      <h1 id="titulo">Mis Datos Personales</h1>
+
+      <div class="input-box">
+        <label class="etiqueta" for="nombre">Nombre</label>
+        <input
+          type="text"
+          name="nombre"
+          placeholder="Ingrese su Nombre"
+          required
+        />
+      </div>
+      <div class="input-box">
+        <label for="apellido" class="etiqueta">Apellido</label>
+        <input
+          type="text"
+          name="apellido"
+          placeholder="Ingrese su Apellido"
+          required
+        />
+      </div>
+      <div class="input-select">
+        <label for="tipo" class="etiqueta">Tipo De Documento</label>
+        <select class="select" name="Tipo de Documento" required>
+          <option value="DNI">DNI</option>
+          <option value="LE">LE</option>
+          <option value="LC">LC</option>
+          <option value="CI">CI</option>
+        </select>
+      </div>
+      <div class="input-box">
+        <label for="nro-de-documento" class="etiqueta"
+          >Numero de Documento</label
+        >
+        <input
+          type="number"
+          name="nro-de-documento"
+          placeholder="Ingrese su Numero de Documento"
+          required
+        />
+      </div>
+      <div class="input-box">
+        <label for="fecha" class="etiqueta">Fecha de nacimiento</label>
+        <input type="date" id="fecha" name="fecha" required />
+      </div>
+      <div class="input-box">
+        <label for="nro-de-celular" class="etiqueta">Numero de Celular</label>
+        <input
+          type="number"
+          name="nro-de-celular"
+          placeholder="Ingrese su Numero de celular"
+          required
+        />
+      </div>
+      <div class="input-box">
+        <label class="etiqueta" for="nombre">Email Secundario</label>
+
+        <input
+          type="email"
+          name="email-secundario"
+          placeholder="Ingrese su Email Secundario"
+          required
+        />
+      </div>
+      <button type="submit" id="boton">Guardar Cambios</button>
+    </form>
+  </body>
+</html>
