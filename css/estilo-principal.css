@@ -173,6 +173,7 @@ input {
 }
 
 .articulo-categoria {
+   display: grid;
    border: solid 3px #dda853;
 }
 
@@ -301,10 +302,9 @@ input {
 
 .detalle-articulo{
    display: grid;
-   grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-   gap: 1rem; /* opcional: espacio entre columnas */
-   align-items: start; /* o center, según cómo quieras alinear verticalmente */
-   margin-bottom: 2rem;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1rem;
+   align-items: start;
 }
 
 .detalle-articulo .precio{
@@ -316,5 +316,39 @@ input {
 }
 
 .detalle-articulo .color{
+   text-align: center;
+}
+
+.detalle-articulo .color p{
+   text-align: start;
+}
+
+.item-valor-descripcion{
+   text-align: center;
+}
+
+.item-valor-autor{
+   color: #775f22;
+   font-size: 1.4rem;
+}
+
+.item-valor-rating{
+   color: #775f22;
+   font-size: 1.4rem;
+}
+
+.footer-articulo {
+   display: flex;
+   gap: 1rem; 
+   align-items: start;
+   margin-bottom: 2rem;
+   max-height: 4rem;
+}
+
+.footer-articulo .datos{
+   text-align: start;
+}
+
+.footer-articulo .origen{
    text-align: center;
 }
