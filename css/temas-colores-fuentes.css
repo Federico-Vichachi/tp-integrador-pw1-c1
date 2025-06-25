@@ -17,7 +17,7 @@
    --dark-color-acento-3: #b85232;
 }
 
- .light-theme {
+.light-theme {
    color: var(--light-color-texto);
    background-color: var(--light-color-fondo);
 }
