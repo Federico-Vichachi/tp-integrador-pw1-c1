@@ -13,7 +13,8 @@
 
 <body id="cuerpo">
    <header id="encabezado-principal">
-      <div id="titulo-logo">
+
+      <div id="titulo-logo" class="logo-iconos">
          <h1>Indumentaria</h1>
          <img id="logo" src="assets/img/logo.webp" alt="logo de la web">
       </div>
@@ -24,18 +25,20 @@
       </div>
 
       <div id="iconos">
-         <div class="iconos-superiores">
             <a href="/html/login.html">
                <i class='bx  bxs-user'></i>
                <h3>Iniciar Sesión</h3>
             </a>
+
             <i class='bx  bxs-moon'></i>
             <h3>Modo Oscuro</h3>
-         </div>
-         <div class="iconos-inferiores">
-            <i class='bx  bxs-cart'></i>
-            <p>0.00$</p>
-         </div>
+      
+
+            <div id="carrito-precio">
+               <i class='bx  bxs-cart'></i>
+               <p>0.00$</p>
+            </div>
+         
       </div>
    </header>
    <header id="encabezado-secundario">
@@ -536,15 +539,16 @@
          </ul>
       </div>
       <div id="footer-principal-centro">
-         <span>Siguenos!</span>
+         <span class="titulos-footer">Síguenos!</span>
          <div class="iconos-footer">
-            <img src="assets/img/facebook.png" alt="iconofacebook">
-            <img src="assets/img/x.png" alt="iconofacebook">
-            <img src="assets/img/instagram.png" alt="iconofacebook">
-            <img src="assets/img/youtube.png" alt="iconofacebook">
+            <i class='bx  bxl-facebook-circle'></i> 
+            <i class='bx bxl-twitter'></i> 
+            <i class='bx bxl-instagram'></i>
+            <i class='bx  bxl-youtube'></i> 
+
          </div>
          <div class="signUp">
-            <span>SUSCRIBETE Y ENTERATE DE TODO</span>
+            <span class="titulos-footer">Suscribite y enterate de las novedades</span>
             <div class="input-footer">
                <input type="text" placeholder="Escribe tu correo aqui!">
                <button class="boton-suscribete">Suscribirme</button>
