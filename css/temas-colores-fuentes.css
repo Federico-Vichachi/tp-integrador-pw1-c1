@@ -5,24 +5,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Guntur');
 
 :root {
-   --light-color-texto: #183b4e;
+
+
    --light-color-fondo: #f5eedc;
-   --light-color-acento-1: #775f22;
-   --light-color-acento-2: #183b4e;
-   --light-color-acento-3: #dda853;
-   --dark-color-texto: #ede0bd;
-   --dark-color-fondo: #2b230c;
-   --dark-color-acento-1: #dcc37f;
-   --dark-color-acento-2: #236a80;
-   --dark-color-acento-3: #b85232;
+   --light-color-1: #183b4e;
+   --light-color-2: #775f22;
+   --light-color-3: #dda853;
+
+   --dark-color-fondo: #041C32;
+   --dark-color-1: #f5eedc;
+   --dark-color-2: #ECB365;
+
 }
 
-.light-theme {
-   color: var(--light-color-texto);
+/* .light-theme {
+   color: var(--light-color-1);
    background-color: var(--light-color-fondo);
 }
 
 .dark-theme {
-   color: var(--dark-color-texto);
+   color: var(--dark-color-1);
    background-color: var(--dark-color-fondo);
-}
+} */

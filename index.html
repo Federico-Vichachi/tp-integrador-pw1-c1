@@ -5,14 +5,13 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Grupo 13 | Indumentaria</title>
-
    <link rel="stylesheet" href="css/temas-colores-fuentes.css">
    <link rel="stylesheet" href="css/estilo-principal.css">
    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<body id="cuerpo">
-   <header id="encabezado-principal">
+<body id="cuerpo" class="light-theme">
+   <header id="encabezado-principal" class="light-theme">
 
       <div id="titulo-logo" class="logo-iconos">
          <h1>Indumentaria</h1>
@@ -30,9 +29,10 @@
                <h3>Iniciar Sesión</h3>
             </a>
 
-            <i class='bx  bxs-moon'></i>
-            <h3>Modo Oscuro</h3>
-      
+            <div id="toggleModoOscuro">
+               <i class='bx  bxs-moon'></i>
+               <h3>Modo Oscuro</h3>
+            </div>      
 
             <div id="carrito-precio">
                <i class='bx  bxs-cart'></i>
@@ -46,7 +46,7 @@
    </header>
 
    <main>
-      <nav id="navegacion-categoria">
+      <nav id="navegacion-categoria" class="light-theme">
          <a href="#" id="tab-categoria-1" class="tab-categoria">Accesorios</a>
          <a href="#" id="tab-categoria-2" class="tab-categoria">Buzos</a>
          <a href="#" id="tab-categoria-3" class="tab-categoria">Calzado</a>
@@ -57,7 +57,7 @@
       <section id="seccion-filtros">
       </section>
 
-      <section id="seccion-categoria">
+      <section id="seccion-categoria" class="light-theme">
          <article id="categoria00-item01" class="articulo-categoria item01">
             <header class="header-articulo">
                <div class="encabezado-carta">
@@ -528,7 +528,7 @@
       </section>
    </main>
 
-   <footer id="footer-principal">
+   <footer id="footer-principal" class="light-theme">
       <div id="footer-principal-izquierda">
          <span class="titulos-footer">Asistencia</span>
          <ul class="listas-footer">
@@ -571,6 +571,7 @@
 
    <!-- NO MODIFICAR: realiza la carga de datos -->
    <script type="module" src="js/cargar-datos.js"></script>
+   <script src="js/funcionalidades.js"></script>
 </body>
 
 </html>
