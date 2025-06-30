@@ -1,5 +1,4 @@
-﻿body {
-    background-color: #f5eedc;
+﻿#cuerpo {
     font-family: 'Libre Franklin', Arial, sans-serif;
     margin: 0, auto;
     display: flex;
@@ -8,9 +7,17 @@
     min-height: 50em;
 }
 
+#cuerpo.light-theme {
+    background-color: var(--light-color-fondo);
+}
+
+#cuerpo.dark-theme {
+    background-color: var(--dark-color-fondo);
+}
+
 form {
     background-color: #fff;
-    border: 2px solid #dda853;
+    border: 2px solid var(--light-color-3);
     border-radius: 10px;
     padding: 2em 1.5em;
     width: 100%;
@@ -22,7 +29,7 @@ form {
 }
 
 #titulo-login {
-    color: #183b4e;
+    color: var(--light-color-1);
     text-align: center;
     margin-bottom: 0.5em;
     font-size: 1.7em;
@@ -36,17 +43,17 @@ form {
 .input-box input {
     width: 100%;
     padding: 0.7em 2.2em 0.7em 0.8em;
-    border: 2px solid #dda853;
+    border: 2px solid var(--light-color-3);
     border-radius: 6px;
     font-size: 1em;
-    background-color: #f5eedc;
-    color: #183b4e;
+    background-color: var(--light-color-fondo);
+    color: var(--light-color-1);
     outline: none;
     box-sizing: border-box;
 }
 
 .input-box input:focus {
-    border-color: #775f22;
+    border-color: var(--light-color-2);
     background-color: #fff;
 }
 
@@ -67,7 +74,7 @@ form {
 #boton-login {
     width: 100%;
     padding: 0.7em 0;
-    background-color: #775f22;
+    background-color: var(--light-color-2);
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -77,12 +84,12 @@ form {
 }
 
 #boton-login:hover {
-    background-color: #dda853;
-    color: #183b4e;
+    background-color: var(--light-color-3);
+    color: var(--light-color-1);
 }
 
 #olvide {
-    color: #183b4e;
+    color: var(--light-color-1);
     text-decoration: none;
     text-align: center;
 }
@@ -90,12 +97,12 @@ form {
 #no-tengo-una-cuenta {
     text-align: center;
     font-size: 1em;
-    color: #183b4e;
+    color: var(--light-color-1);
     margin-top: 0.5em;
     font-weight: 400;
 }
 
 #no-tengo-una-cuenta a {
-    color: #183b4e;
+    color: var(--light-color-1);
     text-decoration: none;
 }

@@ -1,6 +1,5 @@
 ﻿/* estilos-datos-personales.css */
-body {
-  background-color: #f5eedc;
+#cuerpo {
   font-family: "Libre Franklin", Arial, sans-serif;
   margin: 0 auto;
   display: flex;
@@ -9,6 +8,14 @@ body {
   min-height: 100vh;
   flex-direction: column;
   gap: 10px;
+}
+
+#cuerpo.light-theme {
+    background-color: var(--light-color-fondo);
+}
+
+#cuerpo.dark-theme {
+    background-color: var(--dark-color-fondo);
 }
 
 form {
