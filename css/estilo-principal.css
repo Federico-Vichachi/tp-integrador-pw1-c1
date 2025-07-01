@@ -32,6 +32,7 @@
 #encabezado-principal.light-theme{
    background-color: var(--light-color-fondo);
    color: var(--light-color-1);
+   border-bottom: 3px solid var(--light-color-1);
 }
 
 #encabezado-principal.light-theme a {
@@ -45,6 +46,7 @@
 #encabezado-principal.dark-theme{
    background-color: var(--dark-color-fondo);
    color: var(--dark-color-1);
+   border-bottom: 3px solid var(--dark-color-1);
 }
 
 #encabezado-principal.dark-theme a {
@@ -76,19 +78,22 @@
    display: flex;
    align-items: center;
    gap: 0.4em;
-   font-size: 2em;
+   font-size: 1.7em;
 }
 
 #buscador input {
    padding: 0.3em 0.6em;
-   width: 25em;
+   width: 19em;
    height: 2em;
    border-radius: 4px;
+   font-size: 0.5em;
+
 }
 
 
 #iconos {
    display: flex;
+   margin-top: 1em;
 }
 
 #toggleModoOscuro {
@@ -103,10 +108,44 @@
    padding: 0;
 }
 
+#iconos h3 {
+   font-size: 1.3em;
+}
+
 #carrito-precio {
    display: flex;
    gap: 0.4em;
 }
+
+.carousel {
+   height: 25rem;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+   background-color: rgba(0, 0, 0, 0.500);
+   color: white;
+}
+
+.carousel-inner {
+   height: 25rem;
+}
+
+.carousel-item img {
+   height: 24.86rem;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.carousel-item h5 {
+   width: 24.85rem;
+   background-color: rgba(0, 0, 0, 0.500);
+   color: white;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
 #navegacion-categoria {
    display: flex;
    justify-content: center;
@@ -200,12 +239,14 @@
 .articulo-categoria {
    border-radius: 10px;
    border: solid 9px;
+   max-height: 69em;
 }
 
 
 .articulo-categoria h4{
    font-family: 'Libre Franklin';
    font-weight: bolder;
+   font-size: 1em;
 }
 
 .articulo-categoria p{
@@ -270,8 +311,6 @@
 
 .origen {
    margin-top: 1em;
-   display: flex;
-   align-content: center;
    gap: 0.7em;
 }
 
