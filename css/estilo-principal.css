@@ -179,17 +179,29 @@
    background-color: var(--dark-color-2);
 }
 
+#navegacion-categoria.light-theme .tab-categoria-activa {
+  background: var(--light-color-2);
+  color: var(--light-color-fondo);
+  border: 2px solid var(--light-color-1);
+}
+
+#navegacion-categoria.dark-theme .tab-categoria-activa {
+  background: var(--dark-color-2);
+  color: var(--dark-color-fondo);
+  border: 2px solid var(--dark-color-1);
+
+}
 
 .tab-categoria {
    font-family: 'Hind Guntur';
    font-size: 1.2em;
    margin-top: 1em;
    margin-bottom: 1em;
-   padding-right: 1em;
-   padding-left: 1em;
+   padding: 0.5em 1.2em;
    border-radius: 4px;
    text-decoration: none;
 }
+
 
 #seccion-categoria {
    display: grid;
@@ -261,7 +273,6 @@
 .rating {
    display: flex;
    justify-content: center;
-   align-items: center;
    gap: 0.3em;
    margin-top: 0.5em;
 }
