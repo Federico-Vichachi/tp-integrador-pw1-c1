@@ -287,8 +287,15 @@
 
 .rating .bxs-star {
    font-size: 0.8em;
-   color: gold;
    margin-bottom: 0.16em;
+}
+
+.on{
+   color: gold;
+}
+
+.off{
+   color: rgb(78, 78, 78);
 }
 
 .encabezado-carta {
@@ -299,6 +306,10 @@
    font-size: 1.3em;
    margin-bottom: 0;
    word-spacing: -5px;
+}
+
+.encabezado-carta a{
+   text-decoration: none;
 }
 
 .item-valor-nombre {
@@ -340,6 +351,10 @@
    margin-top: 1em;
    display: flex;
    justify-content: space-around;
+}
+
+.ocultar{
+   display: none;
 }
 
 .footer-articulo {
