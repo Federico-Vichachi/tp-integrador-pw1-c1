@@ -9,6 +9,7 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
    <link rel="stylesheet" href="css/temas-colores-fuentes.css">
    <link rel="stylesheet" href="css/estilo-principal.css">
+   <link rel="stylesheet" href="css/popup.css">
    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -23,7 +24,7 @@
 
       <div id="buscador">
          <i class='bx  bx-search'></i>
-         <input type="text" placeholder="Buscar...">
+         <input class="buscador" type="text" placeholder="Buscar...">
       </div>
 
       <div id="iconos">
@@ -39,7 +40,7 @@
 
          <div id="favoritos">
             <a href="/html/favoritos.html">
-               <i class='bx  bxs-heart' ></i> 
+               <i class='bx  bxs-heart' ></i>
                <h3>Favoritos</h3>
             </a>
          </div>
@@ -64,35 +65,35 @@
          <div class="carousel-inner">
             <div class="carousel-item active">
                <img src="" class="d-block" alt="...">
-               <div class="carousel-caption d-none d-md-block">
+               <div class="carousel-caption d-md-block">
                   <h5></h5>
                </div>
             </div>
 
             <div class="carousel-item">
                <img src="" class="d-block" alt="...">
-               <div class="carousel-caption d-none d-md-block">
+               <div class="carousel-caption d-md-block">
                   <h5></h5>
                </div>
             </div>
 
             <div class="carousel-item">
                <img src="" class="d-block" alt="...">
-               <div class="carousel-caption d-none d-md-block">
+               <div class="carousel-caption d-md-block">
                   <h5></h5>
                </div>
             </div>
 
             <div class="carousel-item">
                <img src="" class="d-block" alt="...">
-               <div class="carousel-caption d-none d-md-block">
+               <div class="carousel-caption d-md-block">
                   <h5></h5>
                </div>
             </div>
 
             <div class="carousel-item">
                <img src="" class="d-block" alt="...">
-               <div class="carousel-caption d-none d-md-block">
+               <div class="carousel-caption d-md-block">
                   <h5></h5>
                </div>
             </div>
@@ -121,6 +122,31 @@
       </nav>
 
       <section id="seccion-filtros">
+      </section>
+
+      <p id="mensaje-sin-resultados" class="mensaje-sin-resultados">
+         Disculpa, no se encontraron resultados...
+      </p>
+
+      <section id="popup" class="popup d-none">
+         <div id="cerrar" class="cerrar header">
+            X
+         </div>
+         <article class="popup-article cuerpo">
+            <div class="popup-div columna1">
+               <h2 id="popup-nombre"></h2>
+               <img id="popup-imagen" src="" alt="portada" />
+            </div>
+            <div class="popup-div columna2">
+               <p id="popup-autor"></p>
+               <p id="popup-descripcion"></p>
+               <p id="popup-personalizado-1"></p>
+               <p id="popup-personalizado-2"></p>
+               <p id="popup-personalizado-3"></p>
+               <p id="popup-personalizado-4"></p>
+               <p id="popup-personalizado-5"></p>
+            </div>
+         </article>
       </section>
 
       <section id="seccion-categoria" class="light-theme">
@@ -680,6 +706,7 @@
    <script type="module" src="js/carousel/carousel.js"></script>
    <script type="module" src="js/funcionalidades/tab-activo.js"></script>
    <script type="module" src="js/favoritos/favoritos.js"></script>
+   <script type="module" src="js/popup/popup.js"></script>
 </body>
 
 </html>
