@@ -1,685 +1,870 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grupo 13 | Indumentaria</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/temas-colores-fuentes.css" />
+    <link rel="stylesheet" href="css/estilo-principal.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Grupo 13 | Indumentaria</title>
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-   <link rel="stylesheet" href="css/temas-colores-fuentes.css">
-   <link rel="stylesheet" href="css/estilo-principal.css">
-   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-
-<body id="cuerpo" class="light-theme">
-   <header id="encabezado-principal" class="light-theme">
+  <body id="cuerpo" class="light-theme">
+    <header id="encabezado-principal" class="light-theme">
       <a href="index.html">
-         <div id="titulo-logo" class="logo-iconos">
-            <h1>Indumentaria</h1>
-            <img id="logo" src="assets/img/logo-light.png" alt="logo de la web">
-         </div>
+        <div id="titulo-logo" class="logo-iconos">
+          <h1>Indumentaria</h1>
+          <img id="logo" src="assets/img/logo-light.png" alt="logo de la web" />
+        </div>
       </a>
 
       <div id="buscador">
-         <i class='bx  bx-search'></i>
-         <input type="text" placeholder="Buscar...">
+        <i class="bx bx-search"></i>
+        <input type="text" placeholder="Buscar..." />
       </div>
 
       <div id="iconos">
-         <a href="/html/login.html">
-            <i class='bx  bxs-user'></i>
-            <h3>Iniciar Sesión</h3>
-         </a>
+        <a href="/html/login.html">
+          <i class="bx bxs-user"></i>
+          <h3>Iniciar Sesión</h3>
+        </a>
 
-         <div id="toggleModoOscuro">
-            <i id="luna-sol" class='bx  bxs-moon'></i>
-            <h3 id="texto-modo">Modo Oscuro</h3>
-         </div>
+        <div id="toggleModoOscuro">
+          <i id="luna-sol" class="bx bxs-moon"></i>
+          <h3 id="texto-modo">Modo Oscuro</h3>
+        </div>
 
-         <div id="favoritos">
-            <a href="/html/favoritos.html">
-               <i class='bx  bxs-heart' ></i> 
-               <h3>Favoritos</h3>
-            </a>
-         </div>
-
+        <div id="favoritos">
+          <a href="/html/favoritos.html">
+            <i class="bx bxs-heart"></i>
+            <h3>Favoritos</h3>
+          </a>
+        </div>
       </div>
-   </header>
-   <header id="encabezado-secundario">
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-               aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-               aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-               aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-               aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
-               aria-label="Slide 5"></button>
-         </div>
+    </header>
+    <header id="encabezado-secundario">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="5000"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
 
-         <div class="carousel-inner">
-            <div class="carousel-item active">
-               <img src="" class="d-block" alt="...">
-               <div class="carousel-caption d-none d-md-block">
-                  <h5></h5>
-               </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="" class="d-block" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5></h5>
             </div>
+          </div>
 
-            <div class="carousel-item">
-               <img src="" class="d-block" alt="...">
-               <div class="carousel-caption d-none d-md-block">
-                  <h5></h5>
-               </div>
+          <div class="carousel-item">
+            <img src="" class="d-block" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5></h5>
             </div>
+          </div>
 
-            <div class="carousel-item">
-               <img src="" class="d-block" alt="...">
-               <div class="carousel-caption d-none d-md-block">
-                  <h5></h5>
-               </div>
+          <div class="carousel-item">
+            <img src="" class="d-block" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5></h5>
             </div>
+          </div>
 
-            <div class="carousel-item">
-               <img src="" class="d-block" alt="...">
-               <div class="carousel-caption d-none d-md-block">
-                  <h5></h5>
-               </div>
+          <div class="carousel-item">
+            <img src="" class="d-block" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5></h5>
             </div>
+          </div>
 
-            <div class="carousel-item">
-               <img src="" class="d-block" alt="...">
-               <div class="carousel-caption d-none d-md-block">
-                  <h5></h5>
-               </div>
+          <div class="carousel-item">
+            <img src="" class="d-block" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5></h5>
             </div>
-         </div>
+          </div>
+        </div>
 
-         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-         </button>
-         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-         </button>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-   </header>
+    </header>
 
-   <main>
+    <main>
       <nav id="navegacion-categoria" class="light-theme">
-         <a href="#" id="tab-categoria-1" class="tab-categoria">Accesorios</a>
-         <a href="#" id="tab-categoria-2" class="tab-categoria">Buzos</a>
-         <a href="#" id="tab-categoria-3" class="tab-categoria">Calzado</a>
-         <a href="#" id="tab-categoria-4" class="tab-categoria">Pantalones</a>
-         <a href="#" id="tab-categoria-5" class="tab-categoria">Remeras</a>
+        <a href="#" id="tab-categoria-1" class="tab-categoria">Accesorios</a>
+        <a href="#" id="tab-categoria-2" class="tab-categoria">Buzos</a>
+        <a href="#" id="tab-categoria-3" class="tab-categoria">Calzado</a>
+        <a href="#" id="tab-categoria-4" class="tab-categoria">Pantalones</a>
+        <a href="#" id="tab-categoria-5" class="tab-categoria">Remeras</a>
       </nav>
 
-      <section id="seccion-filtros">
-      </section>
+      <section id="seccion-filtros"></section>
 
       <section id="seccion-categoria" class="light-theme">
-         <article id="categoria00-item01" class="articulo-categoria item01">
-            <header class="header-articulo">
-               <div class="encabezado-carta">
-                  <div class="nombre-favorito">
-                     <p class="item-valor-nombre"><span class="formato-texto-cartas">Nombre</span> ITEM 1</p>
-                     <i class='bx bxs-heart-circle favorito-inactivo'></i> 
-                  </div>
-                  <p class="item-valor-autor"><span class="formato-texto-cartas">Autor</span> ITEM 1</p>
-               </div>
-               <img class="item-valor-portada" src='assets/img/categoria00-item01.png' alt='Imagen de Portada'>
-               <p class="item-valor-descripcion"><span class="formato-texto-cartas">Descripción</span> ITEM 1</p>
-               <div class="rating">
-                  <p class="item-valor-rating"><span class="formato-texto-cartas">Rating</span> ITEM 1</p>
-                  <i class='bx  bxs-star'></i>
-               </div>
-            </header>
-            <div class="detalle-articulo">
-               <div class="precio">
-                  <h4 class="item-campo-personalizado_1">CAMPO PERSONALIZADO 1</h4>
-                  <p class="item-valor-personalizado_1">valor personalizado 1</p>
-               </div>
-               <div class="stock">
-                  <h4 class="item-campo-personalizado_2">CAMPO PERSONALIZADO 2</h4>
-                  <p class="item-valor-personalizado_2">valor personalizado 2</p>
-               </div>
-               <div class="color">
-                  <h4 class="item-campo-personalizado_3">CAMPO PERSONALIZADO 3</h4>
-                  <p class="item-valor-personalizado_3">valor personalizado 3</p>
-               </div>
+        <article id="categoria00-item01" class="articulo-categoria item01">
+          <header class="header-articulo">
+            <div class="encabezado-carta">
+              <div class="nombre-favorito">
+                <p class="item-valor-nombre">
+                  <span class="formato-texto-cartas">Nombre</span> ITEM 1
+                </p>
+                <i class="bx bxs-heart-circle favorito-inactivo"></i>
+              </div>
+              <p class="item-valor-autor">
+                <span class="formato-texto-cartas">Autor</span> ITEM 1
+              </p>
             </div>
-            <div class="footer-articulo">
-               <div class="datos">
-                  <h4 class="item-campo-personalizado_5">CAMPO PERSONALIZADO 5</h4>
-                  <p class="item-valor-personalizado_5">valor personalizado 5</p>
-               </div>
-               <div class="origen">
-                  <h4 class="item-campo-personalizado_4">CAMPO PERSONALIZADO 4</h4>
-                  <p class="item-valor-personalizado_4">valor personalizado 4</p>
-               </div>
+            <img
+              class="item-valor-portada"
+              src="assets/img/categoria00-item01.png"
+              alt="Imagen de Portada"
+            />
+            <p class="item-valor-descripcion">
+              <span class="formato-texto-cartas">Descripción</span> ITEM 1
+            </p>
+            <div class="rating">
+              <p class="item-valor-rating">
+                <span class="formato-texto-cartas">Rating</span> ITEM 1
+              </p>
+              <i class="bx bxs-star"></i>
             </div>
-         </article>
+          </header>
+          <div class="detalle-articulo">
+            <div class="precio">
+              <h4 class="item-campo-personalizado_1">CAMPO PERSONALIZADO 1</h4>
+              <p class="item-valor-personalizado_1">valor personalizado 1</p>
+            </div>
+            <div class="stock">
+              <h4 class="item-campo-personalizado_2">CAMPO PERSONALIZADO 2</h4>
+              <p class="item-valor-personalizado_2">valor personalizado 2</p>
+            </div>
+            <div class="color">
+              <h4 class="item-campo-personalizado_3">CAMPO PERSONALIZADO 3</h4>
+              <p class="item-valor-personalizado_3">valor personalizado 3</p>
+            </div>
+          </div>
+          <div class="footer-articulo">
+            <div class="datos">
+              <h4 class="item-campo-personalizado_5">CAMPO PERSONALIZADO 5</h4>
+              <p class="item-valor-personalizado_5">valor personalizado 5</p>
+            </div>
+            <div class="origen">
+              <h4 class="item-campo-personalizado_4">CAMPO PERSONALIZADO 4</h4>
+              <p class="item-valor-personalizado_4">valor personalizado 4</p>
+            </div>
+          </div>
+        </article>
 
-         <article id="categoria00-item02" class="articulo-categoria item02">
-            <header class="header-articulo">
-               <div class="encabezado-carta">
-                  <div class="nombre-favorito">
-                     <p class="item-valor-nombre"><span class="formato-texto-cartas">Nombre</span> ITEM 2</p>
-                     <i class='bx bxs-heart-circle favorito-inactivo'></i> 
-                  </div>
-                  <p class="item-valor-autor"><span class="formato-texto-cartas">Autor</span> ITEM 2</p>
-               </div>
-               <img class="item-valor-portada" src='assets/img/categoria00-item02.png' alt='Imagen de Portada'>
-               <p class="item-valor-descripcion"><span class="formato-texto-cartas">Descripción</span> ITEM 2</p>
-               <div class="rating">
-                  <p class="item-valor-rating"><span class="formato-texto-cartas">Rating</span> ITEM 2</p>
-                  <i class='bx  bxs-star'></i>
-               </div>
-            </header>
-            <div class="detalle-articulo">
-               <div class="precio">
-                  <h4 class="item-campo-personalizado_1">CAMPO PERSONALIZADO 1</h4>
-                  <p class="item-valor-personalizado_1">valor personalizado 1</p>
-               </div>
-               <div class="stock">
-                  <h4 class="item-campo-personalizado_2">CAMPO PERSONALIZADO 2</h4>
-                  <p class="item-valor-personalizado_2">valor personalizado 2</p>
-               </div>
-               <div class="color">
-                  <h4 class="item-campo-personalizado_3">CAMPO PERSONALIZADO 3</h4>
-                  <p class="item-valor-personalizado_3">valor personalizado 3</p>
-               </div>
+        <article id="categoria00-item02" class="articulo-categoria item02">
+          <header class="header-articulo">
+            <div class="encabezado-carta">
+              <div class="nombre-favorito">
+                <p class="item-valor-nombre">
+                  <span class="formato-texto-cartas">Nombre</span> ITEM 2
+                </p>
+                <i class="bx bxs-heart-circle favorito-inactivo"></i>
+              </div>
+              <p class="item-valor-autor">
+                <span class="formato-texto-cartas">Autor</span> ITEM 2
+              </p>
             </div>
-            <div class="footer-articulo">
-               <div class="datos">
-                  <h4 class="item-campo-personalizado_5">CAMPO PERSONALIZADO 5</h4>
-                  <p class="item-valor-personalizado_5">valor personalizado 5</p>
-               </div>
-               <div class="origen">
-                  <h4 class="item-campo-personalizado_4">CAMPO PERSONALIZADO 4</h4>
-                  <p class="item-valor-personalizado_4">valor personalizado 4</p>
-               </div>
+            <img
+              class="item-valor-portada"
+              src="assets/img/categoria00-item02.png"
+              alt="Imagen de Portada"
+            />
+            <p class="item-valor-descripcion">
+              <span class="formato-texto-cartas">Descripción</span> ITEM 2
+            </p>
+            <div class="rating">
+              <p class="item-valor-rating">
+                <span class="formato-texto-cartas">Rating</span> ITEM 2
+              </p>
+              <i class="bx bxs-star"></i>
             </div>
-         </article>
+          </header>
+          <div class="detalle-articulo">
+            <div class="precio">
+              <h4 class="item-campo-personalizado_1">CAMPO PERSONALIZADO 1</h4>
+              <p class="item-valor-personalizado_1">valor personalizado 1</p>
+            </div>
+            <div class="stock">
+              <h4 class="item-campo-personalizado_2">CAMPO PERSONALIZADO 2</h4>
+              <p class="item-valor-personalizado_2">valor personalizado 2</p>
+            </div>
+            <div class="color">
+              <h4 class="item-campo-personalizado_3">CAMPO PERSONALIZADO 3</h4>
+              <p class="item-valor-personalizado_3">valor personalizado 3</p>
+            </div>
+          </div>
+          <div class="footer-articulo">
+            <div class="datos">
+              <h4 class="item-campo-personalizado_5">CAMPO PERSONALIZADO 5</h4>
+              <p class="item-valor-personalizado_5">valor personalizado 5</p>
+            </div>
+            <div class="origen">
+              <h4 class="item-campo-personalizado_4">CAMPO PERSONALIZADO 4</h4>
+              <p class="item-valor-personalizado_4">valor personalizado 4</p>
+            </div>
+          </div>
+        </article>
 
-         <article id="categoria00-item03" class="articulo-categoria item03">
-            <header class="header-articulo">
-               <div class="encabezado-carta">
-                  <div class="nombre-favorito">
-                     <p class="item-valor-nombre"><span class="formato-texto-cartas">Nombre</span> ITEM 3</p>
-                     <i class='bx bxs-heart-circle favorito-inactivo'></i> 
-                  </div>
-                  <p class="item-valor-autor"><span class="formato-texto-cartas">Autor</span> ITEM 3</p>
-               </div>
-               <img class="item-valor-portada" src='assets/img/categoria00-item03.png' alt='Imagen de Portada'>
-               <p class="item-valor-descripcion"><span class="formato-texto-cartas">Descripción</span> ITEM 3</p>
-               <div class="rating">
-                  <p class="item-valor-rating"><span class="formato-texto-cartas">Rating</span> ITEM 3</p>
-                  <i class='bx  bxs-star'></i>
-               </div>
-            </header>
-            <div class="detalle-articulo">
-               <div class="precio">
-                  <h4 class="item-campo-personalizado_1">CAMPO PERSONALIZADO 1</h4>
-                  <p class="item-valor-personalizado_1">valor personalizado 1</p>
-               </div>
-               <div class="stock">
-                  <h4 class="item-campo-personalizado_2">CAMPO PERSONALIZADO 2</h4>
-                  <p class="item-valor-personalizado_2">valor personalizado 2</p>
-               </div>
-               <div class="color">
-                  <h4 class="item-campo-personalizado_3">CAMPO PERSONALIZADO 3</h4>
-                  <p class="item-valor-personalizado_3">valor personalizado 3</p>
-               </div>
+        <article id="categoria00-item03" class="articulo-categoria item03">
+          <header class="header-articulo">
+            <div class="encabezado-carta">
+              <div class="nombre-favorito">
+                <p class="item-valor-nombre">
+                  <span class="formato-texto-cartas">Nombre</span> ITEM 3
+                </p>
+                <i class="bx bxs-heart-circle favorito-inactivo"></i>
+              </div>
+              <p class="item-valor-autor">
+                <span class="formato-texto-cartas">Autor</span> ITEM 3
+              </p>
             </div>
-            <div class="footer-articulo">
-               <div class="datos">
-                  <h4 class="item-campo-personalizado_5">CAMPO PERSONALIZADO 5</h4>
-                  <p class="item-valor-personalizado_5">valor personalizado 5</p>
-               </div>
-               <div class="origen">
-                  <h4 class="item-campo-personalizado_4">CAMPO PERSONALIZADO 4</h4>
-                  <p class="item-valor-personalizado_4">valor personalizado 4</p>
-               </div>
+            <img
+              class="item-valor-portada"
+              src="assets/img/categoria00-item03.png"
+              alt="Imagen de Portada"
+            />
+            <p class="item-valor-descripcion">
+              <span class="formato-texto-cartas">Descripción</span> ITEM 3
+            </p>
+            <div class="rating">
+              <p class="item-valor-rating">
+                <span class="formato-texto-cartas">Rating</span> ITEM 3
+              </p>
+              <i class="bx bxs-star"></i>
             </div>
-         </article>
+          </header>
+          <div class="detalle-articulo">
+            <div class="precio">
+              <h4 class="item-campo-personalizado_1">CAMPO PERSONALIZADO 1</h4>
+              <p class="item-valor-personalizado_1">valor personalizado 1</p>
+            </div>
+            <div class="stock">
+              <h4 class="item-campo-personalizado_2">CAMPO PERSONALIZADO 2</h4>
+              <p class="item-valor-personalizado_2">valor personalizado 2</p>
+            </div>
+            <div class="color">
+              <h4 class="item-campo-personalizado_3">CAMPO PERSONALIZADO 3</h4>
+              <p class="item-valor-personalizado_3">valor personalizado 3</p>
+            </div>
+          </div>
+          <div class="footer-articulo">
+            <div class="datos">
+              <h4 class="item-campo-personalizado_5">CAMPO PERSONALIZADO 5</h4>
+              <p class="item-valor-personalizado_5">valor personalizado 5</p>
+            </div>
+            <div class="origen">
+              <h4 class="item-campo-personalizado_4">CAMPO PERSONALIZADO 4</h4>
+              <p class="item-valor-personalizado_4">valor personalizado 4</p>
+            </div>
+          </div>
+        </article>
 
-         <article id="categoria00-item04" class="articulo-categoria item04">
-            <header class="header-articulo">
-               <div class="encabezado-carta">
-                  <div class="nombre-favorito">
-                     <p class="item-valor-nombre"><span class="formato-texto-cartas">Nombre</span> ITEM 4</p>
-                     <i class='bx bxs-heart-circle favorito-inactivo'></i> 
-                  </div>
-                  <p class="item-valor-autor"><span class="formato-texto-cartas">Autor</span> ITEM 4</p>
-               </div>
-               <img class="item-valor-portada" src='assets/img/categoria00-item04.png' alt='Imagen de Portada'>
-               <p class="item-valor-descripcion"><span class="formato-texto-cartas">Descripción</span> ITEM 4</p>
-               <div class="rating">
-                  <p class="item-valor-rating"><span class="formato-texto-cartas">Rating</span> ITEM 4</p>
-                  <i class='bx  bxs-star'></i>
-               </div>
-            </header>
-            <div class="detalle-articulo">
-               <div class="precio">
-                  <h4 class="item-campo-personalizado_1">CAMPO PERSONALIZADO 1</h4>
-                  <p class="item-valor-personalizado_1">valor personalizado 1</p>
-               </div>
-               <div class="stock">
-                  <h4 class="item-campo-personalizado_2">CAMPO PERSONALIZADO 2</h4>
-                  <p class="item-valor-personalizado_2">valor personalizado 2</p>
-               </div>
-               <div class="color">
-                  <h4 class="item-campo-personalizado_3">CAMPO PERSONALIZADO 3</h4>
-                  <p class="item-valor-personalizado_3">valor personalizado 3</p>
-               </div>
+        <article id="categoria00-item04" class="articulo-categoria item04">
+          <header class="header-articulo">
+            <div class="encabezado-carta">
+              <div class="nombre-favorito">
+                <p class="item-valor-nombre">
+                  <span class="formato-texto-cartas">Nombre</span> ITEM 4
+                </p>
+                <i class="bx bxs-heart-circle favorito-inactivo"></i>
+              </div>
+              <p class="item-valor-autor">
+                <span class="formato-texto-cartas">Autor</span> ITEM 4
+              </p>
             </div>
-            <div class="footer-articulo">
-               <div class="datos">
-                  <h4 class="item-campo-personalizado_5">CAMPO PERSONALIZADO 5</h4>
-                  <p class="item-valor-personalizado_5">valor personalizado 5</p>
-               </div>
-               <div class="origen">
-                  <h4 class="item-campo-personalizado_4">CAMPO PERSONALIZADO 4</h4>
-                  <p class="item-valor-personalizado_4">valor personalizado 4</p>
-               </div>
+            <img
+              class="item-valor-portada"
+              src="assets/img/categoria00-item04.png"
+              alt="Imagen de Portada"
+            />
+            <p class="item-valor-descripcion">
+              <span class="formato-texto-cartas">Descripción</span> ITEM 4
+            </p>
+            <div class="rating">
+              <p class="item-valor-rating">
+                <span class="formato-texto-cartas">Rating</span> ITEM 4
+              </p>
+              <i class="bx bxs-star"></i>
             </div>
-         </article>
+          </header>
+          <div class="detalle-articulo">
+            <div class="precio">
+              <h4 class="item-campo-personalizado_1">CAMPO PERSONALIZADO 1</h4>
+              <p class="item-valor-personalizado_1">valor personalizado 1</p>
+            </div>
+            <div class="stock">
+              <h4 class="item-campo-personalizado_2">CAMPO PERSONALIZADO 2</h4>
+              <p class="item-valor-personalizado_2">valor personalizado 2</p>
+            </div>
+            <div class="color">
+              <h4 class="item-campo-personalizado_3">CAMPO PERSONALIZADO 3</h4>
+              <p class="item-valor-personalizado_3">valor personalizado 3</p>
+            </div>
+          </div>
+          <div class="footer-articulo">
+            <div class="datos">
+              <h4 class="item-campo-personalizado_5">CAMPO PERSONALIZADO 5</h4>
+              <p class="item-valor-personalizado_5">valor personalizado 5</p>
+            </div>
+            <div class="origen">
+              <h4 class="item-campo-personalizado_4">CAMPO PERSONALIZADO 4</h4>
+              <p class="item-valor-personalizado_4">valor personalizado 4</p>
+            </div>
+          </div>
+        </article>
 
-         <article id="categoria00-item05" class="articulo-categoria item05">
-            <header class="header-articulo">
-               <div class="encabezado-carta">
-                  <div class="nombre-favorito">
-                     <p class="item-valor-nombre"><span class="formato-texto-cartas">Nombre</span> ITEM 5</p>
-                     <i class='bx bxs-heart-circle favorito-inactivo'></i> 
-                  </div>
-                  <p class="item-valor-autor"><span class="formato-texto-cartas">Autor</span> ITEM 5</p>
-               </div>
-               <img class="item-valor-portada" src='assets/img/categoria00-item05.png' alt='Imagen de Portada'>
-               <p class="item-valor-descripcion"><span class="formato-texto-cartas">Descripción</span> ITEM 5</p>
-               <div class="rating">
-                  <p class="item-valor-rating"><span class="formato-texto-cartas">Rating</span> ITEM 5</p>
-                  <i class='bx  bxs-star'></i>
-               </div>
-            </header>
-            <div class="detalle-articulo">
-               <div class="precio">
-                  <h4 class="item-campo-personalizado_1">CAMPO PERSONALIZADO 1</h4>
-                  <p class="item-valor-personalizado_1">valor personalizado 1</p>
-               </div>
-               <div class="stock">
-                  <h4 class="item-campo-personalizado_2">CAMPO PERSONALIZADO 2</h4>
-                  <p class="item-valor-personalizado_2">valor personalizado 2</p>
-               </div>
-               <div class="color">
-                  <h4 class="item-campo-personalizado_3">CAMPO PERSONALIZADO 3</h4>
-                  <p class="item-valor-personalizado_3">valor personalizado 3</p>
-               </div>
+        <article id="categoria00-item05" class="articulo-categoria item05">
+          <header class="header-articulo">
+            <div class="encabezado-carta">
+              <div class="nombre-favorito">
+                <p class="item-valor-nombre">
+                  <span class="formato-texto-cartas">Nombre</span> ITEM 5
+                </p>
+                <i class="bx bxs-heart-circle favorito-inactivo"></i>
+              </div>
+              <p class="item-valor-autor">
+                <span class="formato-texto-cartas">Autor</span> ITEM 5
+              </p>
             </div>
-            <div class="footer-articulo">
-               <div class="datos">
-                  <h4 class="item-campo-personalizado_5">CAMPO PERSONALIZADO 5</h4>
-                  <p class="item-valor-personalizado_5">valor personalizado 5</p>
-               </div>
-               <div class="origen">
-                  <h4 class="item-campo-personalizado_4">CAMPO PERSONALIZADO 4</h4>
-                  <p class="item-valor-personalizado_4">valor personalizado 4</p>
-               </div>
+            <img
+              class="item-valor-portada"
+              src="assets/img/categoria00-item05.png"
+              alt="Imagen de Portada"
+            />
+            <p class="item-valor-descripcion">
+              <span class="formato-texto-cartas">Descripción</span> ITEM 5
+            </p>
+            <div class="rating">
+              <p class="item-valor-rating">
+                <span class="formato-texto-cartas">Rating</span> ITEM 5
+              </p>
+              <i class="bx bxs-star"></i>
             </div>
-         </article>
+          </header>
+          <div class="detalle-articulo">
+            <div class="precio">
+              <h4 class="item-campo-personalizado_1">CAMPO PERSONALIZADO 1</h4>
+              <p class="item-valor-personalizado_1">valor personalizado 1</p>
+            </div>
+            <div class="stock">
+              <h4 class="item-campo-personalizado_2">CAMPO PERSONALIZADO 2</h4>
+              <p class="item-valor-personalizado_2">valor personalizado 2</p>
+            </div>
+            <div class="color">
+              <h4 class="item-campo-personalizado_3">CAMPO PERSONALIZADO 3</h4>
+              <p class="item-valor-personalizado_3">valor personalizado 3</p>
+            </div>
+          </div>
+          <div class="footer-articulo">
+            <div class="datos">
+              <h4 class="item-campo-personalizado_5">CAMPO PERSONALIZADO 5</h4>
+              <p class="item-valor-personalizado_5">valor personalizado 5</p>
+            </div>
+            <div class="origen">
+              <h4 class="item-campo-personalizado_4">CAMPO PERSONALIZADO 4</h4>
+              <p class="item-valor-personalizado_4">valor personalizado 4</p>
+            </div>
+          </div>
+        </article>
 
-         <article id="categoria00-item06" class="articulo-categoria item06">
-            <header class="header-articulo">
-               <div class="encabezado-carta">
-                  <div class="nombre-favorito">
-                     <p class="item-valor-nombre"><span class="formato-texto-cartas">Nombre</span> ITEM 6</p>
-                     <i class='bx bxs-heart-circle favorito-inactivo'></i> 
-                  </div>
-                  <p class="item-valor-autor"><span class="formato-texto-cartas">Autor</span> ITEM 6</p>
-               </div>
-               <img class="item-valor-portada" src='assets/img/categoria00-item06.png' alt='Imagen de Portada'>
-               <p class="item-valor-descripcion"><span class="formato-texto-cartas">Descripción</span> ITEM 6</p>
-               <div class="rating">
-                  <p class="item-valor-rating"><span class="formato-texto-cartas">Rating</span> ITEM 6</p>
-                  <i class='bx  bxs-star'></i>
-               </div>
-            </header>
-            <div class="detalle-articulo">
-               <div class="precio">
-                  <h4 class="item-campo-personalizado_1">CAMPO PERSONALIZADO 1</h4>
-                  <p class="item-valor-personalizado_1">valor personalizado 1</p>
-               </div>
-               <div class="stock">
-                  <h4 class="item-campo-personalizado_2">CAMPO PERSONALIZADO 2</h4>
-                  <p class="item-valor-personalizado_2">valor personalizado 2</p>
-               </div>
-               <div class="color">
-                  <h4 class="item-campo-personalizado_3">CAMPO PERSONALIZADO 3</h4>
-                  <p class="item-valor-personalizado_3">valor personalizado 3</p>
-               </div>
+        <article id="categoria00-item06" class="articulo-categoria item06">
+          <header class="header-articulo">
+            <div class="encabezado-carta">
+              <div class="nombre-favorito">
+                <p class="item-valor-nombre">
+                  <span class="formato-texto-cartas">Nombre</span> ITEM 6
+                </p>
+                <i class="bx bxs-heart-circle favorito-inactivo"></i>
+              </div>
+              <p class="item-valor-autor">
+                <span class="formato-texto-cartas">Autor</span> ITEM 6
+              </p>
             </div>
-            <div class="footer-articulo">
-               <div class="datos">
-                  <h4 class="item-campo-personalizado_5">CAMPO PERSONALIZADO 5</h4>
-                  <p class="item-valor-personalizado_5">valor personalizado 5</p>
-               </div>
-               <div class="origen">
-                  <h4 class="item-campo-personalizado_4">CAMPO PERSONALIZADO 4</h4>
-                  <p class="item-valor-personalizado_4">valor personalizado 4</p>
-               </div>
+            <img
+              class="item-valor-portada"
+              src="assets/img/categoria00-item06.png"
+              alt="Imagen de Portada"
+            />
+            <p class="item-valor-descripcion">
+              <span class="formato-texto-cartas">Descripción</span> ITEM 6
+            </p>
+            <div class="rating">
+              <p class="item-valor-rating">
+                <span class="formato-texto-cartas">Rating</span> ITEM 6
+              </p>
+              <i class="bx bxs-star"></i>
             </div>
-         </article>
+          </header>
+          <div class="detalle-articulo">
+            <div class="precio">
+              <h4 class="item-campo-personalizado_1">CAMPO PERSONALIZADO 1</h4>
+              <p class="item-valor-personalizado_1">valor personalizado 1</p>
+            </div>
+            <div class="stock">
+              <h4 class="item-campo-personalizado_2">CAMPO PERSONALIZADO 2</h4>
+              <p class="item-valor-personalizado_2">valor personalizado 2</p>
+            </div>
+            <div class="color">
+              <h4 class="item-campo-personalizado_3">CAMPO PERSONALIZADO 3</h4>
+              <p class="item-valor-personalizado_3">valor personalizado 3</p>
+            </div>
+          </div>
+          <div class="footer-articulo">
+            <div class="datos">
+              <h4 class="item-campo-personalizado_5">CAMPO PERSONALIZADO 5</h4>
+              <p class="item-valor-personalizado_5">valor personalizado 5</p>
+            </div>
+            <div class="origen">
+              <h4 class="item-campo-personalizado_4">CAMPO PERSONALIZADO 4</h4>
+              <p class="item-valor-personalizado_4">valor personalizado 4</p>
+            </div>
+          </div>
+        </article>
 
-         <article id="categoria00-item07" class="articulo-categoria item07">
-            <header class="header-articulo">
-               <div class="encabezado-carta">
-                  <div class="nombre-favorito">
-                     <p class="item-valor-nombre"><span class="formato-texto-cartas">Nombre</span> ITEM 7</p>
-                     <i class='bx bxs-heart-circle favorito-inactivo'></i> 
-                  </div>
-                  <p class="item-valor-autor"><span class="formato-texto-cartas">Autor</span> ITEM 7</p>
-               </div>
-               <img class="item-valor-portada" src='assets/img/categoria00-item07.png' alt='Imagen de Portada'>
-               <p class="item-valor-descripcion"><span class="formato-texto-cartas">Descripción</span> ITEM 7</p>
-               <div class="rating">
-                  <p class="item-valor-rating"><span class="formato-texto-cartas">Rating</span> ITEM 7</p>
-                  <i class='bx  bxs-star'></i>
-               </div>
-            </header>
-            <div class="detalle-articulo">
-               <div class="precio">
-                  <h4 class="item-campo-personalizado_1">CAMPO PERSONALIZADO 1</h4>
-                  <p class="item-valor-personalizado_1">valor personalizado 1</p>
-               </div>
-               <div class="stock">
-                  <h4 class="item-campo-personalizado_2">CAMPO PERSONALIZADO 2</h4>
-                  <p class="item-valor-personalizado_2">valor personalizado 2</p>
-               </div>
-               <div class="color">
-                  <h4 class="item-campo-personalizado_3">CAMPO PERSONALIZADO 3</h4>
-                  <p class="item-valor-personalizado_3">valor personalizado 3</p>
-               </div>
+        <article id="categoria00-item07" class="articulo-categoria item07">
+          <header class="header-articulo">
+            <div class="encabezado-carta">
+              <div class="nombre-favorito">
+                <p class="item-valor-nombre">
+                  <span class="formato-texto-cartas">Nombre</span> ITEM 7
+                </p>
+                <i class="bx bxs-heart-circle favorito-inactivo"></i>
+              </div>
+              <p class="item-valor-autor">
+                <span class="formato-texto-cartas">Autor</span> ITEM 7
+              </p>
             </div>
-            <div class="footer-articulo">
-               <div class="datos">
-                  <h4 class="item-campo-personalizado_5">CAMPO PERSONALIZADO 5</h4>
-                  <p class="item-valor-personalizado_5">valor personalizado 5</p>
-               </div>
-               <div class="origen">
-                  <h4 class="item-campo-personalizado_4">CAMPO PERSONALIZADO 4</h4>
-                  <p class="item-valor-personalizado_4">valor personalizado 4</p>
-               </div>
+            <img
+              class="item-valor-portada"
+              src="assets/img/categoria00-item07.png"
+              alt="Imagen de Portada"
+            />
+            <p class="item-valor-descripcion">
+              <span class="formato-texto-cartas">Descripción</span> ITEM 7
+            </p>
+            <div class="rating">
+              <p class="item-valor-rating">
+                <span class="formato-texto-cartas">Rating</span> ITEM 7
+              </p>
+              <i class="bx bxs-star"></i>
             </div>
-         </article>
+          </header>
+          <div class="detalle-articulo">
+            <div class="precio">
+              <h4 class="item-campo-personalizado_1">CAMPO PERSONALIZADO 1</h4>
+              <p class="item-valor-personalizado_1">valor personalizado 1</p>
+            </div>
+            <div class="stock">
+              <h4 class="item-campo-personalizado_2">CAMPO PERSONALIZADO 2</h4>
+              <p class="item-valor-personalizado_2">valor personalizado 2</p>
+            </div>
+            <div class="color">
+              <h4 class="item-campo-personalizado_3">CAMPO PERSONALIZADO 3</h4>
+              <p class="item-valor-personalizado_3">valor personalizado 3</p>
+            </div>
+          </div>
+          <div class="footer-articulo">
+            <div class="datos">
+              <h4 class="item-campo-personalizado_5">CAMPO PERSONALIZADO 5</h4>
+              <p class="item-valor-personalizado_5">valor personalizado 5</p>
+            </div>
+            <div class="origen">
+              <h4 class="item-campo-personalizado_4">CAMPO PERSONALIZADO 4</h4>
+              <p class="item-valor-personalizado_4">valor personalizado 4</p>
+            </div>
+          </div>
+        </article>
 
-         <article id="categoria00-item08" class="articulo-categoria item08">
-            <header class="header-articulo">
-               <div class="encabezado-carta">
-                  <div class="nombre-favorito">
-                     <p class="item-valor-nombre"><span class="formato-texto-cartas">Nombre</span> ITEM 8</p>
-                     <i class='bx bxs-heart-circle favorito-inactivo'></i> 
-                  </div>
-                  <p class="item-valor-autor"><span class="formato-texto-cartas">Autor</span> ITEM 8</p>
-               </div>
-               <img class="item-valor-portada" src='assets/img/categoria00-item08.png' alt='Imagen de Portada'>
-               <p class="item-valor-descripcion"><span class="formato-texto-cartas">Descripción</span> ITEM 8</p>
-               <div class="rating">
-                  <p class="item-valor-rating"><span class="formato-texto-cartas">Rating</span> ITEM 8</p>
-                  <i class='bx  bxs-star'></i>
-               </div>
-            </header>
-            <div class="detalle-articulo">
-               <div class="precio">
-                  <h4 class="item-campo-personalizado_1">CAMPO PERSONALIZADO 1</h4>
-                  <p class="item-valor-personalizado_1">valor personalizado 1</p>
-               </div>
-               <div class="stock">
-                  <h4 class="item-campo-personalizado_2">CAMPO PERSONALIZADO 2</h4>
-                  <p class="item-valor-personalizado_2">valor personalizado 2</p>
-               </div>
-               <div class="color">
-                  <h4 class="item-campo-personalizado_3">CAMPO PERSONALIZADO 3</h4>
-                  <p class="item-valor-personalizado_3">valor personalizado 3</p>
-               </div>
+        <article id="categoria00-item08" class="articulo-categoria item08">
+          <header class="header-articulo">
+            <div class="encabezado-carta">
+              <div class="nombre-favorito">
+                <p class="item-valor-nombre">
+                  <span class="formato-texto-cartas">Nombre</span> ITEM 8
+                </p>
+                <i class="bx bxs-heart-circle favorito-inactivo"></i>
+              </div>
+              <p class="item-valor-autor">
+                <span class="formato-texto-cartas">Autor</span> ITEM 8
+              </p>
             </div>
-            <div class="footer-articulo">
-               <div class="datos">
-                  <h4 class="item-campo-personalizado_5">CAMPO PERSONALIZADO 5</h4>
-                  <p class="item-valor-personalizado_5">valor personalizado 5</p>
-               </div>
-               <div class="origen">
-                  <h4 class="item-campo-personalizado_4">CAMPO PERSONALIZADO 4</h4>
-                  <p class="item-valor-personalizado_4">valor personalizado 4</p>
-               </div>
+            <img
+              class="item-valor-portada"
+              src="assets/img/categoria00-item08.png"
+              alt="Imagen de Portada"
+            />
+            <p class="item-valor-descripcion">
+              <span class="formato-texto-cartas">Descripción</span> ITEM 8
+            </p>
+            <div class="rating">
+              <p class="item-valor-rating">
+                <span class="formato-texto-cartas">Rating</span> ITEM 8
+              </p>
+              <i class="bx bxs-star"></i>
             </div>
-         </article>
+          </header>
+          <div class="detalle-articulo">
+            <div class="precio">
+              <h4 class="item-campo-personalizado_1">CAMPO PERSONALIZADO 1</h4>
+              <p class="item-valor-personalizado_1">valor personalizado 1</p>
+            </div>
+            <div class="stock">
+              <h4 class="item-campo-personalizado_2">CAMPO PERSONALIZADO 2</h4>
+              <p class="item-valor-personalizado_2">valor personalizado 2</p>
+            </div>
+            <div class="color">
+              <h4 class="item-campo-personalizado_3">CAMPO PERSONALIZADO 3</h4>
+              <p class="item-valor-personalizado_3">valor personalizado 3</p>
+            </div>
+          </div>
+          <div class="footer-articulo">
+            <div class="datos">
+              <h4 class="item-campo-personalizado_5">CAMPO PERSONALIZADO 5</h4>
+              <p class="item-valor-personalizado_5">valor personalizado 5</p>
+            </div>
+            <div class="origen">
+              <h4 class="item-campo-personalizado_4">CAMPO PERSONALIZADO 4</h4>
+              <p class="item-valor-personalizado_4">valor personalizado 4</p>
+            </div>
+          </div>
+        </article>
 
-         <article id="categoria00-item09" class="articulo-categoria item09">
-            <header class="header-articulo">
-               <div class="encabezado-carta">
-                  <div class="nombre-favorito">
-                     <p class="item-valor-nombre"><span class="formato-texto-cartas">Nombre</span> ITEM 9</p>
-                     <i class='bx bxs-heart-circle favorito-inactivo'></i> 
-                  </div>
-                  <p class="item-valor-autor"><span class="formato-texto-cartas">Autor</span> ITEM 9</p>
-               </div>
-               <img class="item-valor-portada" src='assets/img/categoria00-item09.png' alt='Imagen de Portada'>
-               <p class="item-valor-descripcion"><span class="formato-texto-cartas">Descripción</span> ITEM 9</p>
-               <div class="rating">
-                  <p class="item-valor-rating"><span class="formato-texto-cartas">Rating</span> ITEM 9</p>
-                  <i class='bx  bxs-star'></i>
-               </div>
-            </header>
-            <div class="detalle-articulo">
-               <div class="precio">
-                  <h4 class="item-campo-personalizado_1">CAMPO PERSONALIZADO 1</h4>
-                  <p class="item-valor-personalizado_1">valor personalizado 1</p>
-               </div>
-               <div class="stock">
-                  <h4 class="item-campo-personalizado_2">CAMPO PERSONALIZADO 2</h4>
-                  <p class="item-valor-personalizado_2">valor personalizado 2</p>
-               </div>
-               <div class="color">
-                  <h4 class="item-campo-personalizado_3">CAMPO PERSONALIZADO 3</h4>
-                  <p class="item-valor-personalizado_3">valor personalizado 3</p>
-               </div>
+        <article id="categoria00-item09" class="articulo-categoria item09">
+          <header class="header-articulo">
+            <div class="encabezado-carta">
+              <div class="nombre-favorito">
+                <p class="item-valor-nombre">
+                  <span class="formato-texto-cartas">Nombre</span> ITEM 9
+                </p>
+                <i class="bx bxs-heart-circle favorito-inactivo"></i>
+              </div>
+              <p class="item-valor-autor">
+                <span class="formato-texto-cartas">Autor</span> ITEM 9
+              </p>
             </div>
-            <div class="footer-articulo">
-               <div class="datos">
-                  <h4 class="item-campo-personalizado_5">CAMPO PERSONALIZADO 5</h4>
-                  <p class="item-valor-personalizado_5">valor personalizado 5</p>
-               </div>
-               <div class="origen">
-                  <h4 class="item-campo-personalizado_4">CAMPO PERSONALIZADO 4</h4>
-                  <p class="item-valor-personalizado_4">valor personalizado 4</p>
-               </div>
+            <img
+              class="item-valor-portada"
+              src="assets/img/categoria00-item09.png"
+              alt="Imagen de Portada"
+            />
+            <p class="item-valor-descripcion">
+              <span class="formato-texto-cartas">Descripción</span> ITEM 9
+            </p>
+            <div class="rating">
+              <p class="item-valor-rating">
+                <span class="formato-texto-cartas">Rating</span> ITEM 9
+              </p>
+              <i class="bx bxs-star"></i>
             </div>
-         </article>
+          </header>
+          <div class="detalle-articulo">
+            <div class="precio">
+              <h4 class="item-campo-personalizado_1">CAMPO PERSONALIZADO 1</h4>
+              <p class="item-valor-personalizado_1">valor personalizado 1</p>
+            </div>
+            <div class="stock">
+              <h4 class="item-campo-personalizado_2">CAMPO PERSONALIZADO 2</h4>
+              <p class="item-valor-personalizado_2">valor personalizado 2</p>
+            </div>
+            <div class="color">
+              <h4 class="item-campo-personalizado_3">CAMPO PERSONALIZADO 3</h4>
+              <p class="item-valor-personalizado_3">valor personalizado 3</p>
+            </div>
+          </div>
+          <div class="footer-articulo">
+            <div class="datos">
+              <h4 class="item-campo-personalizado_5">CAMPO PERSONALIZADO 5</h4>
+              <p class="item-valor-personalizado_5">valor personalizado 5</p>
+            </div>
+            <div class="origen">
+              <h4 class="item-campo-personalizado_4">CAMPO PERSONALIZADO 4</h4>
+              <p class="item-valor-personalizado_4">valor personalizado 4</p>
+            </div>
+          </div>
+        </article>
 
-         <article id="categoria00-item10" class="articulo-categoria item10">
-            <header class="header-articulo">
-               <div class="encabezado-carta">
-                  <div class="nombre-favorito">
-                     <p class="item-valor-nombre"><span class="formato-texto-cartas">Nombre</span> ITEM 10</p>
-                     <i class='bx bxs-heart-circle favorito-inactivo'></i> 
-                  </div>
-                  <p class="item-valor-autor"><span class="formato-texto-cartas">Autor</span> ITEM 10</p>
-               </div>
-               <img class="item-valor-portada" src='assets/img/categoria00-item10.png' alt='Imagen de Portada'>
-               <p class="item-valor-descripcion"><span class="formato-texto-cartas">Descripción</span> ITEM 10</p>
-               <div class="rating">
-                  <p class="item-valor-rating"><span class="formato-texto-cartas">Rating</span> ITEM 10</p>
-                  <i class='bx  bxs-star'></i>
-               </div>
-            </header>
-            <div class="detalle-articulo">
-               <div class="precio">
-                  <h4 class="item-campo-personalizado_1">CAMPO PERSONALIZADO 1</h4>
-                  <p class="item-valor-personalizado_1">valor personalizado 1</p>
-               </div>
-               <div class="stock">
-                  <h4 class="item-campo-personalizado_2">CAMPO PERSONALIZADO 2</h4>
-                  <p class="item-valor-personalizado_2">valor personalizado 2</p>
-               </div>
-               <div class="color">
-                  <h4 class="item-campo-personalizado_3">CAMPO PERSONALIZADO 3</h4>
-                  <p class="item-valor-personalizado_3">valor personalizado 3</p>
-               </div>
+        <article id="categoria00-item10" class="articulo-categoria item10">
+          <header class="header-articulo">
+            <div class="encabezado-carta">
+              <div class="nombre-favorito">
+                <p class="item-valor-nombre">
+                  <span class="formato-texto-cartas">Nombre</span> ITEM 10
+                </p>
+                <i class="bx bxs-heart-circle favorito-inactivo"></i>
+              </div>
+              <p class="item-valor-autor">
+                <span class="formato-texto-cartas">Autor</span> ITEM 10
+              </p>
             </div>
-            <div class="footer-articulo">
-               <div class="datos">
-                  <h4 class="item-campo-personalizado_5">CAMPO PERSONALIZADO 5</h4>
-                  <p class="item-valor-personalizado_5">valor personalizado 5</p>
-               </div>
-               <div class="origen">
-                  <h4 class="item-campo-personalizado_4">CAMPO PERSONALIZADO 4</h4>
-                  <p class="item-valor-personalizado_4">valor personalizado 4</p>
-               </div>
+            <img
+              class="item-valor-portada"
+              src="assets/img/categoria00-item10.png"
+              alt="Imagen de Portada"
+            />
+            <p class="item-valor-descripcion">
+              <span class="formato-texto-cartas">Descripción</span> ITEM 10
+            </p>
+            <div class="rating">
+              <p class="item-valor-rating">
+                <span class="formato-texto-cartas">Rating</span> ITEM 10
+              </p>
+              <i class="bx bxs-star"></i>
             </div>
-         </article>
+          </header>
+          <div class="detalle-articulo">
+            <div class="precio">
+              <h4 class="item-campo-personalizado_1">CAMPO PERSONALIZADO 1</h4>
+              <p class="item-valor-personalizado_1">valor personalizado 1</p>
+            </div>
+            <div class="stock">
+              <h4 class="item-campo-personalizado_2">CAMPO PERSONALIZADO 2</h4>
+              <p class="item-valor-personalizado_2">valor personalizado 2</p>
+            </div>
+            <div class="color">
+              <h4 class="item-campo-personalizado_3">CAMPO PERSONALIZADO 3</h4>
+              <p class="item-valor-personalizado_3">valor personalizado 3</p>
+            </div>
+          </div>
+          <div class="footer-articulo">
+            <div class="datos">
+              <h4 class="item-campo-personalizado_5">CAMPO PERSONALIZADO 5</h4>
+              <p class="item-valor-personalizado_5">valor personalizado 5</p>
+            </div>
+            <div class="origen">
+              <h4 class="item-campo-personalizado_4">CAMPO PERSONALIZADO 4</h4>
+              <p class="item-valor-personalizado_4">valor personalizado 4</p>
+            </div>
+          </div>
+        </article>
 
-         <article id="categoria00-item11" class="articulo-categoria item11">
-            <header class="header-articulo">
-               <div class="encabezado-carta">
-                  <div class="nombre-favorito">
-                     <p class="item-valor-nombre"><span class="formato-texto-cartas">Nombre</span> ITEM 11</p>
-                     <i class='bx bxs-heart-circle favorito-inactivo'></i> 
-                  </div>
-                  <p class="item-valor-autor"><span class="formato-texto-cartas">Autor</span> ITEM 11</p>
-               </div>
-               <img class="item-valor-portada" src='assets/img/categoria00-item11.png' alt='Imagen de Portada'>
-               <p class="item-valor-descripcion"><span class="formato-texto-cartas">Descripción</span> ITEM 11</p>
-               <div class="rating">
-                  <p class="item-valor-rating"><span class="formato-texto-cartas">Rating</span> ITEM 11</p>
-                  <i class='bx  bxs-star'></i>
-               </div>
-            </header>
-            <div class="detalle-articulo">
-               <div class="precio">
-                  <h4 class="item-campo-personalizado_1">CAMPO PERSONALIZADO 1</h4>
-                  <p class="item-valor-personalizado_1">valor personalizado 1</p>
-               </div>
-               <div class="stock">
-                  <h4 class="item-campo-personalizado_2">CAMPO PERSONALIZADO 2</h4>
-                  <p class="item-valor-personalizado_2">valor personalizado 2</p>
-               </div>
-               <div class="color">
-                  <h4 class="item-campo-personalizado_3">CAMPO PERSONALIZADO 3</h4>
-                  <p class="item-valor-personalizado_3">valor personalizado 3</p>
-               </div>
+        <article id="categoria00-item11" class="articulo-categoria item11">
+          <header class="header-articulo">
+            <div class="encabezado-carta">
+              <div class="nombre-favorito">
+                <p class="item-valor-nombre">
+                  <span class="formato-texto-cartas">Nombre</span> ITEM 11
+                </p>
+                <i class="bx bxs-heart-circle favorito-inactivo"></i>
+              </div>
+              <p class="item-valor-autor">
+                <span class="formato-texto-cartas">Autor</span> ITEM 11
+              </p>
             </div>
-            <div class="footer-articulo">
-               <div class="datos">
-                  <h4 class="item-campo-personalizado_5">CAMPO PERSONALIZADO 5</h4>
-                  <p class="item-valor-personalizado_5">valor personalizado 5</p>
-               </div>
-               <div class="origen">
-                  <h4 class="item-campo-personalizado_4">CAMPO PERSONALIZADO 4</h4>
-                  <p class="item-valor-personalizado_4">valor personalizado 4</p>
-               </div>
+            <img
+              class="item-valor-portada"
+              src="assets/img/categoria00-item11.png"
+              alt="Imagen de Portada"
+            />
+            <p class="item-valor-descripcion">
+              <span class="formato-texto-cartas">Descripción</span> ITEM 11
+            </p>
+            <div class="rating">
+              <p class="item-valor-rating">
+                <span class="formato-texto-cartas">Rating</span> ITEM 11
+              </p>
+              <i class="bx bxs-star"></i>
             </div>
-         </article>
+          </header>
+          <div class="detalle-articulo">
+            <div class="precio">
+              <h4 class="item-campo-personalizado_1">CAMPO PERSONALIZADO 1</h4>
+              <p class="item-valor-personalizado_1">valor personalizado 1</p>
+            </div>
+            <div class="stock">
+              <h4 class="item-campo-personalizado_2">CAMPO PERSONALIZADO 2</h4>
+              <p class="item-valor-personalizado_2">valor personalizado 2</p>
+            </div>
+            <div class="color">
+              <h4 class="item-campo-personalizado_3">CAMPO PERSONALIZADO 3</h4>
+              <p class="item-valor-personalizado_3">valor personalizado 3</p>
+            </div>
+          </div>
+          <div class="footer-articulo">
+            <div class="datos">
+              <h4 class="item-campo-personalizado_5">CAMPO PERSONALIZADO 5</h4>
+              <p class="item-valor-personalizado_5">valor personalizado 5</p>
+            </div>
+            <div class="origen">
+              <h4 class="item-campo-personalizado_4">CAMPO PERSONALIZADO 4</h4>
+              <p class="item-valor-personalizado_4">valor personalizado 4</p>
+            </div>
+          </div>
+        </article>
 
-         <article id="categoria00-item12" class="articulo-categoria item12">
-            <header class="header-articulo">
-               <div class="encabezado-carta">
-                  <div class="nombre-favorito">
-                     <p class="item-valor-nombre"><span class="formato-texto-cartas">Nombre</span> ITEM 12</p>
-                     <i class='bx bxs-heart-circle favorito-inactivo'></i> 
-                  </div>
-                  <p class="item-valor-autor"><span class="formato-texto-cartas">Autor</span> ITEM 12</p>
-               </div>
-               <img class="item-valor-portada" src='assets/img/categoria00-item12.png' alt='Imagen de Portada'>
-               <p class="item-valor-descripcion"><span class="formato-texto-cartas">Descripción</span> ITEM 12</p>
-               <div class="rating">
-                  <p class="item-valor-rating"><span class="formato-texto-cartas">Rating</span> ITEM 12</p>
-                  <i class='bx  bxs-star'></i>
-               </div>
-            </header>
-            <div class="detalle-articulo">
-               <div class="precio">
-                  <h4 class="item-campo-personalizado_1">CAMPO PERSONALIZADO 1</h4>
-                  <p class="item-valor-personalizado_1">valor personalizado 1</p>
-               </div>
-               <div class="stock">
-                  <h4 class="item-campo-personalizado_2">CAMPO PERSONALIZADO 2</h4>
-                  <p class="item-valor-personalizado_2">valor personalizado 2</p>
-               </div>
-               <div class="color">
-                  <h4 class="item-campo-personalizado_3">CAMPO PERSONALIZADO 3</h4>
-                  <p class="item-valor-personalizado_3">valor personalizado 3</p>
-               </div>
+        <article id="categoria00-item12" class="articulo-categoria item12">
+          <header class="header-articulo">
+            <div class="encabezado-carta">
+              <div class="nombre-favorito">
+                <p class="item-valor-nombre">
+                  <span class="formato-texto-cartas">Nombre</span> ITEM 12
+                </p>
+                <i class="bx bxs-heart-circle favorito-inactivo"></i>
+              </div>
+              <p class="item-valor-autor">
+                <span class="formato-texto-cartas">Autor</span> ITEM 12
+              </p>
             </div>
-            <div class="footer-articulo">
-               <div class="datos">
-                  <h4 class="item-campo-personalizado_5">CAMPO PERSONALIZADO 5</h4>
-                  <p class="item-valor-personalizado_5">valor personalizado 5</p>
-               </div>
-               <div class="origen">
-                  <h4 class="item-campo-personalizado_4">CAMPO PERSONALIZADO 4</h4>
-                  <p class="item-valor-personalizado_4">valor personalizado 4</p>
-               </div>
+            <img
+              class="item-valor-portada"
+              src="assets/img/categoria00-item12.png"
+              alt="Imagen de Portada"
+            />
+            <p class="item-valor-descripcion">
+              <span class="formato-texto-cartas">Descripción</span> ITEM 12
+            </p>
+            <div class="rating">
+              <p class="item-valor-rating">
+                <span class="formato-texto-cartas">Rating</span> ITEM 12
+              </p>
+              <i class="bx bxs-star"></i>
             </div>
-         </article>
+          </header>
+          <div class="detalle-articulo">
+            <div class="precio">
+              <h4 class="item-campo-personalizado_1">CAMPO PERSONALIZADO 1</h4>
+              <p class="item-valor-personalizado_1">valor personalizado 1</p>
+            </div>
+            <div class="stock">
+              <h4 class="item-campo-personalizado_2">CAMPO PERSONALIZADO 2</h4>
+              <p class="item-valor-personalizado_2">valor personalizado 2</p>
+            </div>
+            <div class="color">
+              <h4 class="item-campo-personalizado_3">CAMPO PERSONALIZADO 3</h4>
+              <p class="item-valor-personalizado_3">valor personalizado 3</p>
+            </div>
+          </div>
+          <div class="footer-articulo">
+            <div class="datos">
+              <h4 class="item-campo-personalizado_5">CAMPO PERSONALIZADO 5</h4>
+              <p class="item-valor-personalizado_5">valor personalizado 5</p>
+            </div>
+            <div class="origen">
+              <h4 class="item-campo-personalizado_4">CAMPO PERSONALIZADO 4</h4>
+              <p class="item-valor-personalizado_4">valor personalizado 4</p>
+            </div>
+          </div>
+        </article>
       </section>
-   </main>
+    </main>
 
-   <footer id="footer-principal" class="light-theme">
+    <footer id="footer-principal" class="light-theme">
       <div id="footer-principal-izquierda">
-         <span class="titulos-footer">Asistencia</span>
-         <ul class="listas-footer">
-            <li>Dudas frecuentes</li>
-            <li>Politicas de privacidad</li>
-            <li>Terminos y condiciones</li>
-            <li>Metodos de pago</li>
-         </ul>
+        <span class="titulos-footer">Asistencia</span>
+        <ul class="listas-footer">
+          <li>Dudas frecuentes</li>
+          <li>Politicas de privacidad</li>
+          <li>Terminos y condiciones</li>
+          <li>Metodos de pago</li>
+        </ul>
       </div>
       <div id="footer-principal-centro">
-         <span class="titulos-footer">Síguenos!</span>
-         <div class="iconos-footer">
-            <i class='bx  bxl-facebook-circle'></i>
-            <i class='bx bxl-twitter'></i>
-            <i class='bx bxl-instagram'></i>
-            <i class='bx  bxl-youtube'></i>
-
-         </div>
-         <div class="signUp">
-            <span class="titulos-footer">Suscribite y enterate de las novedades</span>
-            <div class="input-footer">
-               <input type="text" placeholder="Escribe tu correo aqui!">
-               <button class="boton-suscribete">Suscribirme</button>
-            </div>
-         </div>
+        <span class="titulos-footer">Síguenos!</span>
+        <div class="iconos-footer">
+          <i class="bx bxl-facebook-circle"></i>
+          <i class="bx bxl-twitter"></i>
+          <i class="bx bxl-instagram"></i>
+          <i class="bx bxl-youtube"></i>
+        </div>
+        <div class="signUp">
+          <span class="titulos-footer"
+            >Suscribite y enterate de las novedades</span
+          >
+          <div class="input-footer">
+            <input type="text" placeholder="Escribe tu correo aqui!" />
+            <button class="boton-suscribete">Suscribirme</button>
+          </div>
+        </div>
       </div>
       <!-- <div id="footer-principal-centro">
          <img id="qr-code" src="assets/img/qr.png" />
       </div> -->
       <div id="footer-principal-izquierda">
-         <span class="titulos-footer">Informacion de la empresa</span>
-         <ul class="listas-footer">
-            <li>Acerca de nosotros</li>
-            <li>Prensa</li>
-            <li>Contacto</li>
-            <li>Referencias</li>
-         </ul>
+        <span class="titulos-footer">Informacion de la empresa</span>
+        <ul class="listas-footer">
+          <li>Acerca de nosotros</li>
+          <li>Prensa</li>
+          <li>Contacto</li>
+          <li>Referencias</li>
+        </ul>
       </div>
-   </footer>
+    </footer>
 
-   <!-- NO MODIFICAR: realiza la carga de datos -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    <!-- NO MODIFICAR: realiza la carga de datos -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"></script>
-   <script type="module" src="js/cargar-datos.js"></script>
-   <script type="module" src="js/cambiar-modo/cambiar-modo-home.js"></script>
-   <script type="module" src="js/carousel/carousel.js"></script>
-   <script type="module" src="js/funcionalidades/tab-activo.js"></script>
-   <script type="module" src="js/favoritos/favoritos.js"></script>
-</body>
-
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="js/cargar-datos.js"></script>
+    <script type="module" src="js/cambiar-modo/cambiar-modo-home.js"></script>
+    <script type="module" src="js/carousel/carousel.js"></script>
+    <script type="module" src="js/funcionalidades/tab-activo.js"></script>
+    <script type="module" src="js/favoritos/favoritos.js"></script>
+  </body>
 </html>
