@@ -55,8 +55,36 @@ function getFavoritos() {
 
 // Función para crear una card (tarjeta) de producto con todos sus elementos HTML
 function crearCardProducto(item) {
-    // Desestructura las propiedades principales del objeto item
+    // DESESTRUCTURACIÓN DE OBJETO:
+    // La desestructuración es una sintaxis de ES6 que permite extraer propiedades de un objeto
+    // y asignarlas a variables individuales de forma concisa
+    //
+    // Sintaxis tradicional (sin desestructuración):
+    // const Id = item.Id;
+    // const Nombre = item.Nombre;
+    // const Autor = item.Autor;
+    // const Portada = item.Portada;
+    // const Descripcion = item.Descripcion;
+    // const Rating = item.Rating;
     const { Id, Nombre, Autor, Portada, Descripcion, Rating } = item;
+    //
+    // Explicación paso a paso:
+    // 1. Las llaves {} indican que estamos desestructurando un objeto
+    // 2. Los nombres dentro de las llaves deben coincidir EXACTAMENTE con las propiedades del objeto
+    // 3. JavaScript busca cada propiedad en el objeto 'item' y crea variables con esos nombres
+    // 4. Si una propiedad no existe en el objeto, la variable será 'undefined'
+    //
+    // Ejemplo del objeto item esperado:
+    // {
+    //   "Id": "item-001",
+    //   "Nombre": "Producto ejemplo",
+    //   "Autor": "Marca ejemplo", 
+    //   "Portada": "/assets/img/producto.jpg",
+    //   "Descripcion": "Descripción del producto",
+    //   "Rating": "4.5",
+    //   "personalizado_precio": "$100",
+    //   "personalizado_stock": "10 unidades"
+    // }
     
     // Crea un nuevo elemento HTML 'article' que contendrá la card
     const article = document.createElement('article');
