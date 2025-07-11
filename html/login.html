@@ -1,50 +1,46 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/estilo-login.css" />
+    <link rel="stylesheet" href="/css/temas-colores-fuentes.css" />
+    <title>Iniciar Sesión</title>
+  </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="/css/estilo-login.css">
-   <link rel="stylesheet" href="/css/temas-colores-fuentes.css">
-   <title>Iniciar Sesión</title>
-</head>
-
-<body id="cuerpo" class="light-theme">
-   <form>
+  <body id="cuerpo" class="light-theme">
+    <form>
       <h1 id="titulo-login" class="light-theme">Iniciar Sesión</h1>
 
       <div class="input-box">
-         <input type="email" name="email" placeholder="Email">
+        <input name="email" placeholder="Email" />
       </div>
 
       <div class="input-box">
-         <input type="password" name="password" placeholder="Contraseña">
+        <input type="password" name="password" placeholder="Contraseña" />
       </div>
 
       <div class="recuerdame">
-         <input type="checkbox" name="recuerdame" id="recuerdame">
-         <label for="recuerdame">Mantener sesión iniciada</label>
+        <input type="checkbox" name="recuerdame" id="recuerdame" />
+        <label for="recuerdame">Mantener sesión iniciada</label>
       </div>
 
-      <button id="boton-login" type="submit">
-        Iniciar Sesión
-      </button>
+      <button id="boton-login" type="submit">Iniciar Sesión</button>
+
+      <div id="mensajeValidacion" class="error"></div>
 
       <a id="olvide" href="recuperar-password.html">
-         <strong>Olvidé mi Contraseña</strong>
+        <strong>Olvidé mi Contraseña</strong>
       </a>
 
       <h5 id="no-tengo-una-cuenta">
-         ¿No tienes una cuenta?
-         <a href="registrarse.html">
-            <strong>
-               Registrarse
-            </strong>
-         </a>
+        ¿No tienes una cuenta?
+        <a href="registrarse.html">
+          <strong> Registrarse </strong>
+        </a>
       </h5>
-
-   </form>
-   <script src="/js/cambiar-modo/cambiar-modo-formulario.js"></script>
-</body>
-
+    </form>
+    <script src="/js/cambiar-modo/cambiar-modo-formulario.js"></script>
+    <script src="/js/validaciones/login.js"></script>
+  </body>
 </html>

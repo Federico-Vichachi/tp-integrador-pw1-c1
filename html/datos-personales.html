@@ -1,64 +1,45 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/estilo-datos-personales.css" />
-    <link rel="stylesheet" href="/css/temas-colores-fuentes.css">
+    <link rel="stylesheet" href="/css/temas-colores-fuentes.css" />
     <title>Datos Personales</title>
   </head>
   <body id="cuerpo" class="light-theme">
-    <form action="">
+    <form id="formMiUsuario">
       <h1 id="titulo">Mi Usuario</h1>
 
       <div class="input-box">
-        <label class="etiqueta" for="nombre">Email principal</label>
+        <label class="etiqueta" for="nombre">Ingrese su Nuevo Email</label>
 
-        <input
-          type="email"
-          name="email"
-          placeholder="Ingrese su Email"
-          required
-        />
-
-        <button type="submit" id="boton">Cambiar Email</button>
+        <input name="email" placeholder="Ingrese nuevo Email" />
       </div>
       <div class="input-box">
-        <label class="etiqueta" for="contraseña">Contraseña</label>
+        <label class="etiqueta" for="contraseña"
+          >Ingrese su nueva Contraseña</label
+        >
 
-        <input
-          type="password"
-          name="contraseña-nueva"
-          placeholder="Ingrese La Nueva Contraseña"
-          required
-        />
-        <button type="submit" id="boton">Cambiar Contraseña</button>
+        <input type="password" name="password" placeholder="mas de 4 digitos" />
       </div>
+      <button type="submit" id="boton">Guardar cambios</button>
+      <div id="mensajeValidacionUsuario" class="error"></div>
     </form>
-    <form action="">
+    <form id="formDatos">
       <h1 id="titulo">Mis Datos Personales</h1>
 
       <div class="input-box">
         <label class="etiqueta" for="nombre">Nombre</label>
-        <input
-          type="text"
-          name="nombre"
-          placeholder="Ingrese su Nombre"
-          required
-        />
+        <input type="text" name="nombre" placeholder="Ingrese su Nombre" />
       </div>
       <div class="input-box">
         <label for="apellido" class="etiqueta">Apellido</label>
-        <input
-          type="text"
-          name="apellido"
-          placeholder="Ingrese su Apellido"
-          required
-        />
+        <input type="text" name="apellido" placeholder="Ingrese su Apellido" />
       </div>
       <div class="input-select">
         <label for="tipo" class="etiqueta">Tipo De Documento</label>
-        <select class="select" name="Tipo de Documento" required>
+        <select class="select" name="Tipo de Documento">
           <option value="DNI">DNI</option>
           <option value="LE">LE</option>
           <option value="LC">LC</option>
@@ -73,12 +54,11 @@
           type="number"
           name="nro-de-documento"
           placeholder="Ingrese su Numero de Documento"
-          required
         />
       </div>
       <div class="input-box">
         <label for="fecha" class="etiqueta">Fecha de nacimiento</label>
-        <input type="date" id="fecha" name="fecha" required />
+        <input type="date" id="fecha" name="fecha" />
       </div>
       <div class="input-box">
         <label for="nro-de-celular" class="etiqueta">Numero de Celular</label>
@@ -86,7 +66,6 @@
           type="number"
           name="nro-de-celular"
           placeholder="Ingrese su Numero de celular"
-          required
         />
       </div>
       <div class="input-box">
@@ -96,11 +75,12 @@
           type="email"
           name="email-secundario"
           placeholder="Ingrese su Email Secundario"
-          required
         />
       </div>
       <button type="submit" id="boton">Guardar Cambios</button>
+      <div id="mensajeValidacionDatos" class="error"></div>
     </form>
     <script src="/js/cambiar-modo/cambiar-modo-formulario.js"></script>
+    <script src="../js/validaciones/datos-personales.js"></script>
   </body>
 </html>
