@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Grupo 13 | Indumentaria</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+   <link rel="stylesheet" href="/css/temas-colores-fuentes.css">
+   <link rel="stylesheet" href="/css/estilo-favoritos.css">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body id="cuerpo" class="light-theme">
+   <header id="encabezado-principal" class="light-theme">
+      <a href="/index.html">
+         <div id="titulo-logo" class="logo-iconos">
+            <h1>Indumentaria</h1>
+            <img id="logo" src="/assets/img/logo-light.png" alt="logo de la web">
+         </div>
+      </a>
+
+      <div id="iconos">
+         <a href="/html/login.html">
+            <i class='bx  bxs-user'></i>
+            <h3>Iniciar Sesión</h3>
+         </a>
+
+         <div id="toggleModoOscuro">
+            <i id="luna-sol" class='bx  bxs-moon'></i>
+            <h3 id="texto-modo">Modo Oscuro</h3>
+         </div>
+
+         <div id="favoritos">
+            <a href="/html/favoritos.html">
+               <i class='bx  bxs-heart' ></i> 
+               <h3>Favoritos</h3>
+            </a>
+         </div>
+
+      </div>
+   </header>
+   
+
+   <main>
+      <section id="seccion-favoritos" class="light-theme">
+
+      </section>
+   </main>
+
+   <footer id="footer-principal" class="light-theme">
+      <div id="footer-principal-izquierda">
+         <span class="titulos-footer">Asistencia</span>
+         <ul class="listas-footer">
+            <li>Dudas frecuentes</li>
+            <li>Politicas de privacidad</li>
+            <li>Terminos y condiciones</li>
+            <li>Metodos de pago</li>
+         </ul>
+      </div>
+      <div id="footer-principal-centro">
+         <span class="titulos-footer">Síguenos!</span>
+         <div class="iconos-footer">
+            <i class='bx  bxl-facebook-circle'></i>
+            <i class='bx bxl-twitter'></i>
+            <i class='bx bxl-instagram'></i>
+            <i class='bx  bxl-youtube'></i>
+
+         </div>
+         <div class="signUp">
+            <span class="titulos-footer">Suscribite y enterate de las novedades</span>
+            <div class="input-footer">
+               <input type="text" placeholder="Escribe tu correo aqui!">
+               <button class="boton-suscribete">Suscribirme</button>
+            </div>
+         </div>
+      </div>
+      <!-- <div id="footer-principal-centro">
+         <img id="qr-code" src="assets/img/qr.png" />
+      </div> -->
+      <div id="footer-principal-izquierda">
+         <span class="titulos-footer">Informacion de la empresa</span>
+         <ul class="listas-footer">
+            <li>Acerca de nosotros</li>
+            <li>Prensa</li>
+            <li>Contacto</li>
+            <li>Referencias</li>
+         </ul>
+      </div>
+   </footer>
+
+   
+   <!-- Scripts -->
+   <script type="module" src="/js/favoritos/mostrar-favoritos.js"></script>
+   
+</body>
+
+</html>
